@@ -1,7 +1,9 @@
 ## [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/description/)
 https://leetcode.com/problems/group-anagrams/description/
-\
-Solution: [GroupAnagram.java](src/main/java/org/example/hashing/GroupAnagram.java)
+
+| Solution | [GroupAnagram.java](../src/main/java/org/example/hashing/GroupAnagram.java)            |
+|----------|----------------------------------------------------------------------------------------|
+| Test     | [GroupAnagramTest.java](../src/test/java/org/example/hashing/GroupAnagramTest.java)    |
 
 ### Problem Statement
 Given an array of strings strs, group the anagrams together. You can return the answer in any order.
