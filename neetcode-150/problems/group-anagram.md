@@ -1,4 +1,4 @@
-## [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/description/)
+## [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/)
 https://leetcode.com/problems/group-anagrams/description/
 
 | Solution | [GroupAnagram.java](../src/main/java/org/example/hashing/GroupAnagram.java)            |
