@@ -2,9 +2,9 @@
 https://leetcode.com/problems/valid-sudoku/description/
 
 
-| Solution | [Sudoku.java](../src/main/java/org/example/hashing/Sudoku.java)         |
+| Solution | [Sudoku.java](../../src/main/java/org/example/hashing/Sudoku.java)         |
 |----------|-------------------------------------------------------------------------|
-| Test     | [SudokuTest.java](../src/test/java/org/example/hashing/SudokuTest.java) |
+| Test     | [SudokuTest.java](../../src/test/java/org/example/hashing/SudokuTest.java) |
 
 
 ## Problem Statement

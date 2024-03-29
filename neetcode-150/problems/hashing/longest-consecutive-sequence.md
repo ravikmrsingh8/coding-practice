@@ -6,9 +6,9 @@ Given an unsorted array of integers nums, return the length of the longest conse
 You must write an algorithm that runs in O(n) time.
 
 
-| Solution | [LongestConsecutiveSequence.java](../src/main/java/org/example/hashing/LongestConsecutiveSequence.java)                       |
+| Solution | [LongestConsecutiveSequence.java](../../src/main/java/org/example/hashing/LongestConsecutiveSequence.java)                       |
 |----------|-----------------------------------------------------------------------------------------------------------------|
-| Test     | [LongestConsecutiveSequenceTest.java](../src/test/java/org/example/hashing/LongestConsecutiveSequenceTest.java) |
+| Test     | [LongestConsecutiveSequenceTest.java](../../src/test/java/org/example/hashing/LongestConsecutiveSequenceTest.java) |
 
 ### Example 1:
 ```
