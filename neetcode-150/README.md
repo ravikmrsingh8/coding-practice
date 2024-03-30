@@ -23,9 +23,9 @@
 
 
 
-| Stack |
-|-------|
-|       |
+| Stack                                                         |
+|---------------------------------------------------------------|
+| 1) [Valid Parentheses](./problems/stack/valid-parentheses.md) |
 
 
 
