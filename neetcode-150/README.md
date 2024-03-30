@@ -11,9 +11,10 @@
 
 ### Two Pointers
 
-| Two Pointers                                                       |
-|--------------------------------------------------------------------|
-| 1) [Valid Palindrome](./problems/two-pointers/valid-palindrome.md) |
+| Two Pointers                                                                              |
+|-------------------------------------------------------------------------------------------|
+| 1) [Valid Palindrome](./problems/two-pointers/valid-palindrome.md)                        |
+| 2) [Two Sum II Input Array Is Sorted](./problems/two-pointers/two-sum-ii-sorted-array.md) |
 
 
 ### Sliding Window
