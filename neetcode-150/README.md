@@ -22,89 +22,93 @@
 | 1) [Best Time to Buy and Sell Stock](./problems/sliding-window/best-time-to-buy-sell-stock.md) |
 
 
-
+### Stack
 | Stack                                                         |
 |---------------------------------------------------------------|
 | 1) [Valid Parentheses](./problems/stack/valid-parentheses.md) |
 
 
-
+### Binary Search
 | Binary Search |
 |---------------|
 |               |
 
 
-
-
+### Linked List
 | Linked List |
 |-------------|
 |             |
 
 
-
+### Tree
 | Trees |
 |-------|
 |       |
 
 
-
+### Heap / Priority Queue
 | Heap / Priority Queue                                                                |
 |--------------------------------------------------------------------------------------|
 | 1.[Kth Largest Element in an Array](./problems/heap/kth-largest-element-in-array.md) |
 
 
+### Backtracking
 | Backtracking |
 |--------------|
 |              |
 
 
-
+### Tries
 | Tries |
 |-------|
 |       |
 
 
+### Graphs
 | Graphs |
 |--------|
 |        |
 
 
+### Advanced Graphs
 | Advanced Graphs |
 |-----------------|
 |                 |
 
 
 
+### Dynamic Programming - 1 
 | 1-D Dynamic Programming |
 |-------------------------|
 |                         |
 
 
-
+### Dynamic Programming - 2
 | 2-D Dynamic Programming Pointers |
 |----------------------------------|
 |                                  |
 
 
 
+### Greedy
 | Greedy |
 |--------|
 |        |
 
 
-
+### Intervals
 | Intervals |
 |-----------|
 |           |
 
 
-
-| math & Geometry |
+### Math & Geometry
+| Math & Geometry |
 |-----------------|
 |                 |
 
 
-
+### Bit Manipulation
 | Bit Manipulation |
 |------------------|
 |                  |
