@@ -1,4 +1,7 @@
-# NeetCode 150
+## NeetCode 150
+
+### Arrays & Hashing
+
 | Arrays & Hashing                                                              |
 |-------------------------------------------------------------------------------|
 | 1) [Group Anagrams ](problems/hashing/group-anagram.md)                             |
@@ -6,16 +9,17 @@
 | 3) [Valid Sudoku](problems/hashing/valid-sudoku.md)                                 |
 | 4) [Longest Consecutive Sequence](problems/hashing/longest-consecutive-sequence.md) |
 
+### Two Pointers
 
-|Two Pointers|
-|------------|
-|            |
+| Two Pointers                                                       |
+|--------------------------------------------------------------------|
+| 1) [Valid Palindrome](./problems/two-pointers/valid-palindrome.md) |
 
 
-
-| Sliding Window |
-|----------------|
-|                |
+### Sliding Window
+| Sliding Window                                                                                 |
+|------------------------------------------------------------------------------------------------|
+| 1) [Best Time to Buy and Sell Stock](./problems/sliding-window/best-time-to-buy-sell-stock.md) |
 
 
 

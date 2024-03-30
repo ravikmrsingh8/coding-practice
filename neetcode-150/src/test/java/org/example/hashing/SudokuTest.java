@@ -2,11 +2,13 @@ package org.example.hashing;
 
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 class SudokuTest {
 
     @Test
+    @DisplayName("Test Valid Sudoku")
     void isValidSudokuTest1() {
         char[][] board = {
                 {'5','3','.','.','7','.','.','.','.'},
@@ -25,6 +27,7 @@ class SudokuTest {
     }
 
     @Test
+    @DisplayName("Test Invalid Sudoku")
     void invalidSudoku() {
         char[][] board = {
                 {'8','3','.','.','7','.','.','.','.'},
