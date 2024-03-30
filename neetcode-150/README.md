@@ -84,9 +84,9 @@
 
 
 ### Dynamic Programming - 2
-| 2-D Dynamic Programming Pointers |
-|----------------------------------|
-|                                  |
+| 2-D Dynamic Programming  |
+|--------------------------|
+|                          |
 
 
 
