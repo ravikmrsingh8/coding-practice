@@ -15,7 +15,7 @@
 |-------------------------------------------------------------------------------------------|
 | 1) [Valid Palindrome](./problems/two-pointers/valid-palindrome.md)                        |
 | 2) [Two Sum II Input Array Is Sorted](./problems/two-pointers/two-sum-ii-sorted-array.md) |
-| 3) [Container with most water]()                                                          |
+| 3) [Container with most water](./problems/two-pointers/container-with-most-water.md)      |
 
 ### Sliding Window
 | Sliding Window                                                                                 |
@@ -24,9 +24,11 @@
 
 
 ### Stack
-| Stack                                                         |
-|---------------------------------------------------------------|
-| 1) [Valid Parentheses](./problems/stack/valid-parentheses.md) |
+| Stack                                                                              |
+|------------------------------------------------------------------------------------|
+| 1) [Valid Parentheses](./problems/stack/valid-parentheses.md)                      |
+| 2) [Min Stack](./problems/stack/min-stack.md)                                      |
+| 3) [Evaluate Reverse Polish Notation](./problems/stack/reverse-polish-notation.md) |
 
 
 ### Binary Search
@@ -48,9 +50,10 @@
 
 
 ### Heap / Priority Queue
-| Heap / Priority Queue                                                                |
-|--------------------------------------------------------------------------------------|
-| 1.[Kth Largest Element in an Array](./problems/heap/kth-largest-element-in-array.md) |
+| Heap / Priority Queue                                                                 |
+|---------------------------------------------------------------------------------------|
+| 1) [Kth Largest Element in an Array](./problems/heap/kth-largest-element-in-array.md) |
+| 2) [Last Stone Weight](./problems/heap/last-stone-weight.md)                          |
 
 
 ### Backtracking
