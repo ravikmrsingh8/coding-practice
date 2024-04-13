@@ -1,30 +1,34 @@
 # [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/)
 https://leetcode.com/problems/group-anagrams/description/
 
+<hr />
 
-## Problem Statement
+### Problem Statement
 Given an array of strings strs, group the anagrams together. You can return the answer in any order.
 
 An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
 
 
 
-### Example 1:
+#### Example 1
 ```
 Input: strs = ["eat","tea","tan","ate","nat","bat"]
 Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
 ```
-### Example 2:
+#### Example 2
 ```
 Input: strs = [""]
 Output: [[""]]
 ```
-### Example 3:
+#### Example 3
 ```
 Input: strs = ["a"]
 Output: [["a"]]
 ```
-## Solution
+
+<hr />
+
+### Solution
 [GroupAnagram.java](../../src/main/java/org/example/hashing/GroupAnagram.java) 
 ```java
 package org.example.hashing;

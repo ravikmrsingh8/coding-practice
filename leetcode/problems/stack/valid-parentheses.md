@@ -1,12 +1,9 @@
 # [Valid Parentheses ](https://leetcode.com/problems/valid-parentheses/description/)
 https://leetcode.com/problems/valid-parentheses/description/
 
+<hr>
 
-| Solution | [ValidParentheses.java](../../src/main/java/org/example/stack/ValidParentheses.java)          |
-|----------|-----------------------------------------------------------------------------------------------|
-| Test     | [ValidParenthesesTest.java](../../src/test/java/org/example/stack/ValidParenthesesTest.java) |
-
-## Problem Statement
+### Problem Statement
 Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
 An input string is valid if:
@@ -16,24 +13,58 @@ An input string is valid if:
 - Every close bracket has a corresponding open bracket of the same type.
 
 
-### Example 1:
+#### Example 1
 ```
 Input: s = "()"
 Output: true
 ```
 
-### Example 2:
+#### Example 2
 ```
 Input: s = "()[]{}"
 Output: true
 ```
 
-### Example 3:
+#### Example 3
 ```
 Input: s = "(]"
 Output: false
 ```
 
-### Constraints:
-- 1 <= s.length <= 10^4
-- s consists of parentheses only '()[]{}'.
+<hr>
+
+### Solution
+[ValidParentheses.java](../../src/main/java/org/example/stack/ValidParentheses.java)  
+```java
+package org.example.stack;
+
+import java.util.Stack;
+
+public class ValidParentheses {
+    public boolean isValid(String s) {
+        char[] expression = s.toCharArray();
+        Stack<Character> stack = new Stack<>();
+        for (char ch : expression) {
+            if(ch == '(' || ch == '{' || ch == '[') {
+                stack.push(ch);
+            } else {
+                if(stack.empty()) {
+                    return false;
+                }
+                char popped = stack.pop();
+                if(!isValidMatch(popped, ch)) {
+                    return false;
+                }
+            }
+        }
+        return stack.empty();
+    }
+
+    private boolean isValidMatch(char popped, char ch) {
+        return (popped == '[' && ch == ']')
+                || (popped == '{' && ch == '}')
+                || (popped == '(' && ch == ')');
+    }
+}
+
+```

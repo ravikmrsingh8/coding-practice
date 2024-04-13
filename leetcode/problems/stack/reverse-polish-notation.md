@@ -1,10 +1,9 @@
 # [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/)
 https://leetcode.com/problems/evaluate-reverse-polish-notation/description/
 
-| Solution | [ReversePolishNotation.java](../../src/main/java/org/example/stack/ReversePolishNotation.java) |
-|----------|-----------------------------------------------------------------------------------|
-| Test     | [ReversePolishNotationTest.java](../../src/test/java/org/example/stack/ReversePolishNotationTest.java)      |
-## Problem Statement
+<hr/>
+
+### Problem Statement
 You are given an array of strings tokens that represents an arithmetic expression in a Reverse Polish Notation.
 
 Evaluate the expression. Return an integer that represents the value of the expression.
@@ -19,14 +18,14 @@ Note that:
 - The answer and all the intermediate calculations can be represented in a 32-bit integer.
 
 
-### Example 1:
+#### Example 1
 ```
 Input: tokens = ["2","1","+","3","*"]
 Output: 9
 Explanation: ((2 + 1) * 3) = 9
 ```
 
-### Example 2:
+#### Example 2
 ```
 Input: tokens = ["4","13","5","/","+"]
 Output: 6
@@ -34,7 +33,7 @@ Output: 6
 Explanation: (4 + (13 / 5)) = 6
 ```
 
-### Example 3:
+#### Example 3
 ```
 Input: tokens = ["10","6","9","3","+","-11","*","/","*","17","+","5","+"]
 Output: 22
@@ -47,8 +46,47 @@ Explanation: ((10 * (6 / ((9 + 3) * -11))) + 17) + 5
 = 17 + 5
 = 22
 ```
+<hr />
 
-### Constraints:
+### Solution
+[ReversePolishNotation.java](../../src/main/java/org/example/stack/ReversePolishNotation.java) 
+```java
+package org.example.stack;
 
-- 1 <= tokens.length <= 10^4
-- tokens[i] is either an operator: "+", "-", "*", or "/", or an integer in the range [-200, 200].
+import java.util.Map;
+import java.util.Stack;
+import java.util.function.IntBinaryOperator;
+
+public class ReversePolishNotation {
+    static Map<String, IntBinaryOperator> operator = Map.of(
+            "+", (a, b) -> a + b,
+            "-", (a, b) -> a - b,
+            "*", (a, b) -> a * b,
+            "/", (a, b) -> a / b
+    );
+
+    private boolean isOperator(String token) {
+        return operator.containsKey(token);
+    }
+
+    private int evaluateOp(String op, int a, int b) {
+        return operator.get(op).applyAsInt(a, b);
+    }
+
+    public int evalRPN(String[] tokens) {
+        Stack<Integer> stack = new Stack<>();
+        for(String token : tokens) {
+            if(isOperator(token)) {
+                int b = stack.pop();
+                int a = stack.pop();
+                int result = evaluateOp(token, a, b);
+                stack.push(result);
+            } else {
+                stack.push(Integer.valueOf(token));
+            }
+        }
+        return stack.peek();
+    }
+}
+
+```

@@ -1,11 +1,9 @@
 # [Min Stack](https://leetcode.com/problems/min-stack/description/)
 https://leetcode.com/problems/min-stack/description/
 
-| Solution | [MinStack.java](../../src/main/java/org/example/stack/MinStack.java)                        |
-|----------|---------------------------------------------------------------------------------------------|
-| Test     | [MinStackTest.java](../../src/test/java/org/example/stack/MinStackTest.java) |
+<hr />
 
-## Problem Statement
+### Problem Statement
 Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
 Implement the MinStack class:
@@ -18,7 +16,7 @@ MinStack() initializes the stack object.
 
 **You must implement a solution with O(1) time complexity for each function.**
 
-### Example:
+#### Example
 ```
 MinStack minStack = new MinStack();
 minStack.push(-2);
@@ -29,9 +27,44 @@ minStack.pop();
 minStack.top();    // return 0
 minStack.getMin(); // return -2
 ```
+<hr />
 
-### Constraints:
+### Solution
+[MinStack.java](../../src/main/java/org/example/stack/MinStack.java)  
+```java
+package org.example.stack;
 
-- -2^31 <= val <= 2^31 - 1
-- Methods pop, top and getMin operations will always be called on non-empty stacks.
-- At most 3 * 10^4 calls will be made to push, pop, top, and getMin.
+import java.util.Stack;
+
+public class MinStack {
+    Stack<Integer> stack = new Stack<>();
+    Stack<Integer> minStack = new Stack<>();
+    public MinStack() {
+
+    }
+
+    public void push(int val) {
+        stack.push(val);
+        if(!minStack.empty()) {
+            if(minStack.peek() < val) {
+                val = minStack.peek();
+            }
+        }
+        minStack.push(val);
+    }
+
+    public void pop() {
+        minStack.pop();
+        stack.pop();
+    }
+
+    public int top() {
+        return stack.peek();
+    }
+
+    public int getMin() {
+        return minStack.peek();
+    }
+}
+
+```

@@ -1,33 +1,29 @@
 # [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/description/)
 https://leetcode.com/problems/valid-palindrome/description/
 
+<hr />
 
-
-| Solution | [Palindrome.java](../../src/main/java/org/example/twopointers/Palindrome.java)         |
-|----------|----------------------------------------------------------------------------------------|
-| Test     | [PalindromeTest.java](../../src/test/java/org/example/twopointers/PalindromeTest.java) |
-
-## Problem Statement
+### Problem Statement
 A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
 
 Given a string s, return true if it is a palindrome, or false otherwise.
 
 
 
-### Example 1:
+#### Example 1
 ```
 Input: s = "A man, a plan, a canal: Panama"
 Output: true
 ```
 Explanation: "amanaplanacanalpanama" is a palindrome.
-### Example 2:
+#### Example 2
 ```
 Input: s = "race a car"
 Output: false
 ```
 Explanation: "raceacar" is not a palindrome.
 
-### Example 3:
+#### Example 3
 ```
 Input: s = " "
 Output: true
@@ -35,8 +31,40 @@ Output: true
 Explanation: s is an empty string "" after removing non-alphanumeric characters.
 Since an empty string reads the same forward and backward, it is a palindrome.
 
+<hr />
 
-### Constraints:
+### Solution
+[Palindrome.java](../../src/main/java/org/example/twopointers/Palindrome.java)
+```java
+package org.example.twopointers;
 
-- 1 <= s.length <= 2 * 10^5
-- s consists only of printable ASCII characters.
+public class Palindrome {
+    public boolean isValid(String input) {
+        char[] str = preprocess(input);
+        return isPalindrome(str);
+    }
+
+    private boolean isPalindrome(char[] str) {
+        int left = 0;
+        int right = str.length - 1;
+        while (left < right) {
+            if (str[left] != str[right]) {
+                return false;
+            }
+            left++;
+            right--;
+        }
+        return true;
+    }
+
+    char[] preprocess(String input) {
+        char[] arr = input.toCharArray();
+        StringBuilder sb = new StringBuilder();
+        for(char ch : arr) {
+            if(Character.isLetterOrDigit(ch)) sb.append(Character.toLowerCase(ch));
+        }
+        return sb.toString().toCharArray();
+    }
+}
+
+```

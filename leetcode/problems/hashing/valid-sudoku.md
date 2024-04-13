@@ -1,13 +1,9 @@
 # [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/)
 https://leetcode.com/problems/valid-sudoku/description/
 
+<hr />
 
-| Solution | [Sudoku.java](../../src/main/java/org/example/hashing/Sudoku.java)         |
-|----------|-------------------------------------------------------------------------|
-| Test     | [SudokuTest.java](../../src/test/java/org/example/hashing/SudokuTest.java) |
-
-
-## Problem Statement
+### Problem Statement
 Determine if a 9 x 9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules:
 
 1. Each row must contain the digits 1-9 without repetition.
@@ -20,7 +16,7 @@ Only the filled cells need to be validated according to the mentioned rules.
 
 
 
-### Example 1:
+#### Example 1
 ```
 Input: board =
 [['5','3','.','.','7','.','.','.','.']
@@ -36,7 +32,7 @@ Output: true
 ```
 
 
-Example 2:
+#### Example 2
 ```
 Input: board =
 [['8','3','.','.','7','.','.','.','.']
@@ -52,9 +48,42 @@ Output: false
 ```
 Explanation: Same as Example 1, except with the 5 in the top left corner being modified to 8. Since there are two 8's in the top left 3x3 sub-box, it is invalid.
 
+<hr />
 
-### Constraints:
+### Solution
+[Sudoku.java](../../src/main/java/org/example/hashing/Sudoku.java)
+```java
+package org.example.hashing;
 
-- board.length == 9
-- board[i].length == 9
-- board[i][j] is a digit 1-9 or '.'
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+public class Sudoku {
+    public boolean isValid(char[][] board) {
+        Map<Character, Set<String>> map = new HashMap<>();
+        int N = board.length;
+        for (int i=0; i<N; i++) {
+            for (int j=0; j<N; j++) {
+
+                if (board[i][j] == '.') {
+                    continue;
+                }
+
+                String row = String.format("%s%d", "R", i);
+                String col = String.format("%s%d", "C", j);
+                String box = String.format("%s%d%d", "B", i/3, j/3);
+                Set<String> mappings = map.getOrDefault(board[i][j], new HashSet<>());
+                if (mappings.contains(row) || mappings.contains(col) || mappings.contains(box)) {
+                    return false;
+                }
+                mappings.addAll(Set.of(row, col, box));
+                map.put(board[i][j], mappings);
+            }
+        }
+        return true;
+    }
+}
+
+```

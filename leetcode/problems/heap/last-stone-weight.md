@@ -1,11 +1,9 @@
 # [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/description/)
 https://leetcode.com/problems/last-stone-weight/description/
 
-| Solution | [LastStoneWeight.java](../../src/main/java/org/example/heap/LastStoneWeight.java)           |
-|----------|-----------------------------------------------------------------------------------------------|
-| Test     | [LastStoneWeightTest.java](../../src/test/java/org/example/heap/LastStoneWeightTest.java) |
+<hr />
 
-## Problem Statement
+### Problem Statement
 You are given an array of integers stones where stones[i] is the weight of the ith stone.
 
 We are playing a game with the stones. On each turn, we choose the heaviest two stones and smash them together. Suppose the heaviest two stones have weights x and y with x <= y. The result of this smash is:
@@ -19,7 +17,7 @@ Return the weight of the last remaining stone. If there are no stones left, retu
 
 
 
-### Example 1:
+#### Example 1
 ```
 Input: stones = [2,7,4,1,8,1]
 Output: 1
@@ -30,13 +28,37 @@ Explanation:
 - we combine 2 and 1 to get 1 so the array converts to [1,1,1] then,
 - we combine 1 and 1 to get 0 so the array converts to [1] then that's the value of the last stone.
 
-### Example 2:
+#### Example 2
 ```
 Input: stones = [1]
 Output: 1
 ```
+<hr />
 
-### Constraints:
+### Solution
+[LastStoneWeight.java](../../src/main/java/org/example/heap/LastStoneWeight.java)
+```java
+package org.example.heap;
 
-- 1 <= stones.length <= 30
-- 1 <= stones[i] <= 1000
+import java.util.Comparator;
+import java.util.PriorityQueue;
+
+public class LastStoneWeight {
+    public int lastStoneWeight(int[] stones) {
+        PriorityQueue<Integer> q = new PriorityQueue<>(Comparator.reverseOrder());
+        for(int stone: stones) q.offer(stone);
+
+        while(q.size() > 1) {
+            int x = q.poll();
+            int y = q.poll();
+            int z = Math.abs(x-y);
+            if (z != 0) {
+                q.offer(z);
+            }
+        }
+
+        return !q.isEmpty() ? q.peek() : 0;
+    }
+}
+
+```
