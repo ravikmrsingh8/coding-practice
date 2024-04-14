@@ -31,8 +31,9 @@ def get_examples(lines):
 
 
 def get_java_code(category, fileName):
-    java_file_path = "../../src/main/java/org/example/{0}/{1}".format(category, fileName)
-    solution = ["### Solution\n\n[{0}]({1})\n\n".format(fileName, java_file_path)]
+    java_file_path = "./src/main/java/org/example/{0}/{1}".format(category, fileName)
+    java_file_path_readme = "../../src/main/java/org/example/{0}/{1}".format(category, fileName)
+    solution = ["### Solution\n\n[{0}]({1})\n\n".format(fileName, java_file_path_readme)]
     with open(java_file_path) as file:
         solution.append("```java\n")
         solution += file.readlines()
@@ -63,7 +64,7 @@ if __name__ == '__main__':
     # update these variables as per requirement
     category= "tree"
     package_name = "tree"
-    java_file="LevelOrderTraversal.java"
+    java_file="ValidBST.java"
 
     with open(file_path) as file:
         lines = file.readlines()

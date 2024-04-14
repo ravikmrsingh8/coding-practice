@@ -1,6 +1,6 @@
 # Leetcode
 [![Leetcode](./images/leetcode.png)](https://leetcode.com/problemset/)
-### Neetcode (19 :white_check_mark: / 150)
+### Neetcode150 :white_check_mark: 27
 #### Arrays & Hashing
  1. [Group Anagrams ](problems/hashing/group-anagram.md)                             
  2. [Top K Frequent Elements](problems/hashing/top-k-frequent-elements.md)           
@@ -40,7 +40,14 @@
 
 
 #### Tree
-
+1. [Invert Binary Tree](./problems/tree/invert-binary-tree.md)
+2. [Max Depth of Tree](./problems/tree/maximum-depth-of-binary-tree.md)
+3. [Is Same Tree](./problems/tree/same-tree.md)
+4. [Lowest common ancestor in BST](./problems/tree/lowest-common-ancestor.md)
+5. [Level Order Traversal of Binary Tree](./problems/tree/level-order-traversal.md)
+6. [Right side view of Binary Tree](./problems/tree/binary-tree-right-side-view.md)
+7. [Good Nodes in Binary Tree](./problems/tree/count-good-nodes-in-binary-tree.md)
+8. [Valid Binary Search Tree](./problems/tree/valid-binary-search-tree.md)
        
 
 
