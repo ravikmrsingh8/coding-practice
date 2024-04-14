@@ -63,7 +63,7 @@ if __name__ == '__main__':
     # update these variables as per requirement
     category= "linkedlist"
     package_name = "linkedlist"
-    java_file="ReverseLinkedList.java"
+    java_file="CopyList.java"
 
     with open(file_path) as file:
         lines = file.readlines()

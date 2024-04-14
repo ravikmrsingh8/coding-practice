@@ -1,5 +1,8 @@
-Copy List with Random Pointer
+# [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/)
 https://leetcode.com/problems/copy-list-with-random-pointer/description/
+<hr />
+
+### Problem Statement
 A linked list of length n is given such that each node contains an additional random pointer, which could point to any node in the list, or null.
 
 Construct a deep copy of the list. The deep copy should consist of exactly n brand new nodes, where each new node has its value set to the value of its corresponding original node. Both the next and random pointer of the new nodes should point to new nodes in the copied list such that the pointers in the original list and copied list represent the same list state. None of the pointers in the new list should point to nodes in the original list.
@@ -13,23 +16,62 @@ The linked list is represented in the input/output as a list of n nodes. Each no
 val: an integer representing Node.val
 random_index: the index of the node (range from 0 to n-1) that the random pointer points to, or null if it does not point to any node.
 Your code will only be given the head of the original linked list.
-----------------
- 
 
-Example 1:
-
-
+#### Example 1:
+![image](./copy-list1.png)
+```
 Input: head = [[7,null],[13,0],[11,4],[10,2],[1,0]]
 Output: [[7,null],[13,0],[11,4],[10,2],[1,0]]
-Example 2:
 
-
+```
+#### Example 2:
+![image](./copy-list2.png)
+```
 Input: head = [[1,1],[2,1]]
 Output: [[1,1],[2,1]]
+
+```
+#### Example 3:
+![image](./copy-list3.png)
+```
 Example 3:
-
-
-
 Input: head = [[3,null],[3,0],[3,null]]
 Output: [[3,null],[3,0],[3,null]]
  
+```
+
+<hr />
+
+### Solution
+
+[CopyList.java](./src/main/java/org/example/linkedlist/CopyList.java)
+
+```java
+package org.example.linkedlist;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class CopyList {
+    // Copy list with nodes having random pointer
+    public Node copyRandomList(Node head) {
+        Map<Node, Node> map = new HashMap<>();
+
+        Node itr = head;
+        while(itr != null) {
+            map.put(itr, new Node(itr.val));
+            itr = itr.next;
+        }
+
+        itr = head;
+        while(itr != null) {
+            Node copy = map.get(itr);
+            copy.next = map.get(itr.next);
+            copy.random = map.get(itr.random);
+            itr = itr.next;
+        }
+        return map.get(head);
+    }
+}
+
+```
