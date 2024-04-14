@@ -1,20 +1,21 @@
 # Leetcode
 [![Leetcode](./images/leetcode.png)](https://leetcode.com/problemset/)
-### Neetcode150 :white_check_mark: 27
+### Neetcode150 <code>32 :white_check_mark: </code>
 #### Arrays & Hashing
- 1. [Group Anagrams ](problems/hashing/group-anagram.md)                             
- 2. [Top K Frequent Elements](problems/hashing/top-k-frequent-elements.md)           
- 3. [Valid Sudoku](problems/hashing/valid-sudoku.md)                                 
- 4. [Longest Consecutive Sequence](problems/hashing/longest-consecutive-sequence.md) 
+1. [Group Anagrams ](./problems/hashing/group-anagram.md)                             
+2. [Top K Frequent Elements](./problems/hashing/top-k-frequent-elements.md)           
+3. [Valid Sudoku](./problems/hashing/valid-sudoku.md)                                 
+4. [Longest Consecutive Sequence](./problems/hashing/longest-consecutive-sequence.md) 
+5. [Encode Decode Strings](./problems/hashing/encode-and-decode-strings.md) 
 
  #### Two Pointers
- 1. [Valid Palindrome](./problems/two-pointers/valid-palindrome.md)                        
- 2. [Two Sum II Input Array Is Sorted](./problems/two-pointers/two-sum-ii-sorted-array.md) 
- 3. [Container with most water](./problems/two-pointers/container-with-most-water.md)      
+1. [Valid Palindrome](./problems/two-pointers/valid-palindrome.md)                        
+2. [Two Sum II Input Array Is Sorted](./problems/two-pointers/two-sum-ii-sorted-array.md) 
+3. [Container with most water](./problems/two-pointers/container-with-most-water.md)      
 
 
 #### Sliding Window
- 1) [Best Time to Buy and Sell Stock](./problems/sliding-window/best-time-to-buy-sell-stock.md) 
+1. [Best Time to Buy and Sell Stock](./problems/sliding-window/best-time-to-buy-sell-stock.md) 
 
 
 #### Stack
@@ -36,7 +37,8 @@
 3. [Remove Nth Node from End](./problems/linkedlist/remove-nth-node-from-end-of-list.md)
 4. [Reorder List](./problems/linkedlist/reorder-list.md)
 5. [Copy List with Random Pointer](./problems/linkedlist/copy-list-with-random-pointer.md)
-             
+6. [Add Two Numbers](./problems/linkedlist/add-two-numbers.md)          
+7. [Cycle in List](./problems/linkedlist/linked-list-cycle.md)          
 
 
 #### Tree
@@ -53,9 +55,10 @@
 
 #### Heap / Priority Queue
 
- 1) [Kth Largest Element in an Array](./problems/heap/kth-largest-element-in-array.md) 
- 2) [Last Stone Weight](./problems/heap/last-stone-weight.md)                          
-
+1. [Kth Largest Element in an Array](./problems/heap/kth-largest-element-in-array.md) 
+2. [Last Stone Weight](./problems/heap/last-stone-weight.md)                          
+3. [K Closest Points to Origin](./problems/heap/k-closest-points-to-origin.md)
+4. [Median Finder](./problems/heap/find-median-from-data-stream.md)
 
 #### Backtracking
 

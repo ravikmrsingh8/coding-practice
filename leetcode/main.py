@@ -16,12 +16,11 @@ def get_details(lines):
 
 
 def get_examples(lines):
-
-    indexes = [i for i, val in enumerate(lines) if val.startswith("Example ")]
+    indexes = [i for i, val in enumerate(lines) if val.strip().startswith("Example ")]
     example = []
     for i in range(len(indexes)):
         example.append("#### {0}\n".format(lines[indexes[i]]))
-        example_details = lines[indexes[i] + 1 : indexes[i + 1]] if i + 1 < len(indexes) else lines[indexes[i]:]
+        example_details = lines[indexes[i] + 1 : indexes[i + 1]] if i + 1 < len(indexes) else lines[indexes[i]+1:]
         example_details = [detail for detail in example_details if len(strip(detail)) > 0]
         example.append("```\n")
         example += example_details
@@ -62,9 +61,9 @@ if __name__ == '__main__':
     file_path = "temp.txt"
 
     # update these variables as per requirement
-    category= "tree"
-    package_name = "tree"
-    java_file="ValidBST.java"
+    category= "heap"
+    package_name = "heap"
+    java_file="ClosestPointsToOrigin.java"
 
     with open(file_path) as file:
         lines = file.readlines()
