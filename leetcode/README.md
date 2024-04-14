@@ -1,6 +1,6 @@
 # Leetcode
 [![Leetcode](./images/leetcode.png)](https://leetcode.com/problemset/)
-
+### Neetcode (19 :white_check_mark: / 150)
 #### Arrays & Hashing
  1. [Group Anagrams ](problems/hashing/group-anagram.md)                             
  2. [Top K Frequent Elements](problems/hashing/top-k-frequent-elements.md)           
@@ -19,9 +19,10 @@
 
 #### Stack
                                                                               
- 1) [Valid Parentheses](./problems/stack/valid-parentheses.md)                      
- 2) [Min Stack](./problems/stack/min-stack.md)                                      
- 3) [Evaluate Reverse Polish Notation](./problems/stack/reverse-polish-notation.md) 
+1. [Valid Parentheses](./problems/stack/valid-parentheses.md)                      
+2. [Min Stack](./problems/stack/min-stack.md)                                      
+3. [Evaluate Reverse Polish Notation](./problems/stack/reverse-polish-notation.md) 
+4. [Daily Temperature(Next Warmer Day)](./problems/stack/daily-temperature.md)
 
 
 #### Binary Search
@@ -30,7 +31,11 @@
 
 
 #### Linked List
-
+1. [Reverse LinkedList](./problems/linkedlist/reverse-linked-list.md)
+2. [Merge Two Sorted List](./problems/linkedlist/merge-two-sorted-lists.md)
+3. [Remove Nth Node from End](./problems/linkedlist/remove-nth-node-from-end-of-list.md)
+4. [Reorder List](./problems/linkedlist/reorder-list.md)
+5. [Copy List with Random Pointer](./problems/linkedlist/copy-list-with-random-pointer.md)
              
 
 
