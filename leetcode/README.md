@@ -1,6 +1,6 @@
 # Leetcode
 [![Leetcode](./images/leetcode.png)](https://leetcode.com/problemset/)
-### Neetcode150 <code>32 :white_check_mark: </code>
+### 32 :white_check_mark: <code>Neetcode150</code>
 #### Arrays & Hashing
 1. [Group Anagrams ](./problems/hashing/group-anagram.md)                             
 2. [Top K Frequent Elements](./problems/hashing/top-k-frequent-elements.md)           
