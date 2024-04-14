@@ -32,7 +32,7 @@ Output: [1,5,2,4,3]
 
 ### Solution
 
-[ReorderList.java](./src/main/java/org/example/linkedlist/ReorderList.java)
+[ReorderList.java](../../src/main/java/org/example/linkedlist/ReorderList.java)
 
 ```java
 package org.example.linkedlist;

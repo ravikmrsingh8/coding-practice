@@ -34,7 +34,7 @@ Output: []
 
 ### Solution
 
-[ReverseLinkedList.java](./src/main/java/org/example/linkedlist/ReverseLinkedList.java)
+[ReverseLinkedList.java](../../src/main/java/org/example/linkedlist/ReverseLinkedList.java)
 
 ```java
 package org.example.linkedlist;

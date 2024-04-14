@@ -37,7 +37,7 @@ Output: [0]
 
 ### Solution
 
-[MergeTwoSortedList.java](./src/main/java/org/example/linkedlist/MergeTwoSortedList.java)
+[MergeTwoSortedList.java](../../src/main/java/org/example/linkedlist/MergeTwoSortedList.java)
 
 ```java
 package org.example.linkedlist;

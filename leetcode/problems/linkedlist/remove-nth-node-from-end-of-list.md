@@ -32,7 +32,7 @@ Output: [1]
 
 ### Solution
 
-[RemoveNthNodeFromEnd.java](./src/main/java/org/example/linkedlist/RemoveNthNodeFromEnd.java)
+[RemoveNthNodeFromEnd.java](../../src/main/java/org/example/linkedlist/RemoveNthNodeFromEnd.java)
 
 ```java
 package org.example.linkedlist;

@@ -44,7 +44,7 @@ Output: [[3,null],[3,0],[3,null]]
 
 ### Solution
 
-[CopyList.java](./src/main/java/org/example/linkedlist/CopyList.java)
+[CopyList.java](../../src/main/java/org/example/linkedlist/CopyList.java)
 
 ```java
 package org.example.linkedlist;
