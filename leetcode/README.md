@@ -1,6 +1,6 @@
 # Leetcode
 [![Leetcode](./images/leetcode.png)](https://leetcode.com/problemset/)
-### 32 :white_check_mark: <code>Neetcode150</code>
+### 34 :white_check_mark: <code>Neetcode150</code>
 #### Arrays & Hashing
 1. [Group Anagrams ](./problems/hashing/group-anagram.md)                             
 2. [Top K Frequent Elements](./problems/hashing/top-k-frequent-elements.md)           
@@ -71,7 +71,8 @@
 
 
 #### Graphs
-
+1. [Number of Islands](./problems/graph/number-of-islands.md)
+2. [Max Area of Island](./problems/graph/max-area-of-island.md)
         
 
 

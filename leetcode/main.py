@@ -61,9 +61,9 @@ if __name__ == '__main__':
     file_path = "temp.txt"
 
     # update these variables as per requirement
-    category= "heap"
-    package_name = "heap"
-    java_file="ClosestPointsToOrigin.java"
+    category= "graph"
+    package_name = "graph"
+    java_file="IslandMaxArea.java"
 
     with open(file_path) as file:
         lines = file.readlines()
