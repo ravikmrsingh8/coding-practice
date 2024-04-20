@@ -61,9 +61,9 @@ if __name__ == '__main__':
     file_path = "temp.txt"
 
     # update these variables as per requirement
-    category= "graph"
-    package_name = "graph"
-    java_file="IslandMaxArea.java"
+    category= "sliding-window"
+    package_name = "slidingwindow"
+    java_file="LongestSubstring.java"
 
     with open(file_path) as file:
         lines = file.readlines()
