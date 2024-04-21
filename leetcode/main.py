@@ -61,9 +61,9 @@ if __name__ == '__main__':
     file_path = "temp.txt"
 
     # update these variables as per requirement
-    category= "graph"
-    package_name = "graph"
-    java_file="RottenOrangesSolution.java"
+    category= "bit-manipulation"
+    package_name = "bit"
+    java_file="MissingNumber.java"
 
     with open(file_path) as file:
         lines = file.readlines()

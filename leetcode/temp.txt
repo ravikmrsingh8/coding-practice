@@ -1,29 +1,21 @@
-Rotting Oranges
-https://leetcode.com/problems/rotting-oranges/description/
-You are given an m x n grid where each cell can have one of three values:
+Missing Number
+https://leetcode.com/problems/missing-number/description/
+Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
+--------------------
 
-- 0 representing an empty cell,
-- 1 representing a fresh orange, or
-- 2 representing a rotten orange.
-
-Every minute, any fresh orange that is 4-directionally adjacent to a rotten orange becomes rotten.
-
-Return the minimum number of minutes that must elapse until no cell has a fresh orange. If this is impossible, return -1.
---------------------------
- 
 
 Example 1:
 
-
-Input: grid = [[2,1,1],[1,1,0],[0,1,1]]
-Output: 4
+Input: nums = [3,0,1]
+Output: 2
+Explanation: n = 3 since there are 3 numbers, so all numbers are in the range [0,3]. 2 is the missing number in the range since it does not appear in nums.
 Example 2:
 
-Input: grid = [[2,1,1],[0,1,1],[1,0,1]]
-Output: -1
-Explanation: The orange in the bottom left corner (row 2, column 0) is never rotten, because rotting only happens 4-directionally.
+Input: nums = [0,1]
+Output: 2
+Explanation: n = 2 since there are 2 numbers, so all numbers are in the range [0,2]. 2 is the missing number in the range since it does not appear in nums.
 Example 3:
 
-Input: grid = [[0,2]]
-Output: 0
-Explanation: Since there are already no fresh oranges at minute 0, the answer is just 0.
+Input: nums = [9,6,4,2,3,5,7,0,1]
+Output: 8
+Explanation: n = 9 since there are 9 numbers, so all numbers are in the range [0,9]. 8 is the missing number in the range since it does not appear in nums.

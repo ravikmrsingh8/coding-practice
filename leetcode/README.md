@@ -1,6 +1,6 @@
 # Leetcode
 [![Leetcode](./images/leetcode.png)](https://leetcode.com/problemset/)
-### 38 :white_check_mark: <code>Neetcode150</code>
+### 43 :white_check_mark: <code>Neetcode150</code>
 #### Arrays & Hashing
 1. [Group Anagrams ](./problems/hashing/group-anagram.md)                             
 2. [Top K Frequent Elements](./problems/hashing/top-k-frequent-elements.md)           
@@ -76,6 +76,8 @@
 3. [Clone Graph](./problems/graph/clone-graph.md)   
 4. [Rotting Oranges](./problems/graph/rotting-oranges.md)
 5. [Surrounded Region](./problems/graph/surrounded-regions.md)
+6. [Walls And gates](./problems/graph/walls-and-gates.md)
+7. [Pacific Atlantic Water Flow](./problems/graph/pacific-atlantic-water-flow.md)
 
 
 #### Advanced Graphs
@@ -111,5 +113,9 @@
 
 
 #### Bit Manipulation
+1. [Single Number(Non Repeating Number)](./problems/bit-manipulation/single-number.md)
+2. [Number of 1 Bits](./problems/bit-manipulation/number-of-1-bits.md)
+3. [Missing Number](./problems/bit-manipulation/missing-number.md)
+
 
                   
