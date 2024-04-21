@@ -11,8 +11,7 @@ public class IslandMaxArea {
 
     record Node(int i, int j){};
 
-    static int[] di = {0, -1, 0, 1};
-    static int[] dj = {1, 0, -1, 0};
+    static int[][] moves = {{0,-1}, {0, 1}, {-1, 0}, {1, 0}};
 
 
     IslandMaxArea(int[][] grid) {
@@ -50,9 +49,9 @@ public class IslandMaxArea {
 
             for(int n=0; n<N; n++) {
                 Node node = q.poll();
-                for (int m=0; m<4; m++) {
-                    int ni = node.i() + di[m];
-                    int nj = node.j() + dj[m];
+                for (int[] move : moves) {
+                    int ni = node.i() + move[0];
+                    int nj = node.j() + move[1];
                     if (isSafe(ni, nj)) {
                         visited[ni][nj] = true;
                         q.offer(new Node(ni, nj));

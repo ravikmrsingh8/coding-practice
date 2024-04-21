@@ -6,8 +6,7 @@ public class IslandsDFS {
     int col;
     char[][] grid;
 
-    static int[] di = {0, -1, 0, 1};
-    static int[] dj = {1, 0, -1, 0};
+   static int[][] moves = {{0, -1}, {0, 1}, {-1, 0}, {1, 0}};
 
     public IslandsDFS(char[][] grid) {
         this.grid = grid;
@@ -37,9 +36,9 @@ public class IslandsDFS {
 
     void dfs(int i, int j) {
         visited[i][j] = true;
-        for (int m = 0; m < 4; m++) {
-            int ni = i + di[m];
-            int nj = j + dj[m];
+        for (int[] move: moves) {
+            int ni = i + move[0];
+            int nj = j + move[1];
             if (isSafe(ni, nj)) {
                 dfs(ni, nj);
             }

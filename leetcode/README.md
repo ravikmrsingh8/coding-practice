@@ -1,6 +1,6 @@
 # Leetcode
 [![Leetcode](./images/leetcode.png)](https://leetcode.com/problemset/)
-### 35 :white_check_mark: <code>Neetcode150</code>
+### 38 :white_check_mark: <code>Neetcode150</code>
 #### Arrays & Hashing
 1. [Group Anagrams ](./problems/hashing/group-anagram.md)                             
 2. [Top K Frequent Elements](./problems/hashing/top-k-frequent-elements.md)           
@@ -16,7 +16,7 @@
 
 #### Sliding Window
 1. [Best Time to Buy and Sell Stock](./problems/sliding-window/best-time-to-buy-sell-stock.md) 
-
+2. [Longest Substring without repeating characters](./problems/sliding-window/longest-substring-without-repeating-characters.md)
 
 #### Stack
                                                                               
@@ -73,7 +73,9 @@
 #### Graphs
 1. [Number of Islands](./problems/graph/number-of-islands.md)
 2. [Max Area of Island](./problems/graph/max-area-of-island.md)
-3. [Clone Graph](./problems/graph/clone-graph.md)        
+3. [Clone Graph](./problems/graph/clone-graph.md)   
+4. [Rotting Oranges](./problems/graph/rotting-oranges.md)
+5. [Surrounded Region](./problems/graph/surrounded-regions.md)
 
 
 #### Advanced Graphs
