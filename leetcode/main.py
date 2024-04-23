@@ -61,9 +61,9 @@ if __name__ == '__main__':
     file_path = "temp.txt"
 
     # update these variables as per requirement
-    category= "bit-manipulation"
-    package_name = "bit"
-    java_file="MissingNumber.java"
+    category= "hashing"
+    package_name = "hashing"
+    java_file="TwoSum.java"
 
     with open(file_path) as file:
         lines = file.readlines()

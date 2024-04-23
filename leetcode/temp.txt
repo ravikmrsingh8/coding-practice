@@ -1,21 +1,22 @@
-Missing Number
-https://leetcode.com/problems/missing-number/description/
-Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
---------------------
+Two Sum
+https://leetcode.com/problems/two-sum/description/
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+You can return the answer in any order.
+----------------------------
+ 
 
 Example 1:
-
-Input: nums = [3,0,1]
-Output: 2
-Explanation: n = 3 since there are 3 numbers, so all numbers are in the range [0,3]. 2 is the missing number in the range since it does not appear in nums.
+Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 Example 2:
 
-Input: nums = [0,1]
-Output: 2
-Explanation: n = 2 since there are 2 numbers, so all numbers are in the range [0,2]. 2 is the missing number in the range since it does not appear in nums.
+Input: nums = [3,2,4], target = 6
+Output: [1,2]
 Example 3:
 
-Input: nums = [9,6,4,2,3,5,7,0,1]
-Output: 8
-Explanation: n = 9 since there are 9 numbers, so all numbers are in the range [0,9]. 8 is the missing number in the range since it does not appear in nums.
+Input: nums = [3,3], target = 6
+Output: [0,1]
