@@ -41,7 +41,8 @@
 4. [Reorder List](./problems/linkedlist/reorder-list.md)
 5. [Copy List with Random Pointer](./problems/linkedlist/copy-list-with-random-pointer.md)
 6. [Add Two Numbers](./problems/linkedlist/add-two-numbers.md)          
-7. [Cycle in List](./problems/linkedlist/linked-list-cycle.md)          
+7. [Cycle in List](./problems/linkedlist/linked-list-cycle.md)     
+8. [Find Duplicate Number](./problems/linkedlist/find-the-duplicate-number.md)
 
 
 #### Tree
