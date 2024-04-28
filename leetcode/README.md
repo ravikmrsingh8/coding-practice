@@ -1,6 +1,6 @@
 # Leetcode
 [![Leetcode](./images/leetcode.png)](https://leetcode.com/problemset/)
-### 46 :white_check_mark: <code>Neetcode150</code>
+### 50 :white_check_mark: <code>Neetcode150</code>
 #### Arrays & Hashing
 1. [Contains Duplicate](./problems/hashing/contains-duplicate.md)
 2. [Valid Anagram](./problems/hashing/valid-anagram.md)
@@ -43,17 +43,19 @@
 6. [Add Two Numbers](./problems/linkedlist/add-two-numbers.md)          
 7. [Cycle in List](./problems/linkedlist/linked-list-cycle.md)     
 8. [Find Duplicate Number](./problems/linkedlist/find-the-duplicate-number.md)
-
+9. [LRU Cache](./problems/linkedlist/lru-cache.md)
 
 #### Tree
 1. [Invert Binary Tree](./problems/tree/invert-binary-tree.md)
 2. [Max Depth of Tree](./problems/tree/maximum-depth-of-binary-tree.md)
-3. [Is Same Tree](./problems/tree/same-tree.md)
-4. [Lowest common ancestor in BST](./problems/tree/lowest-common-ancestor.md)
-5. [Level Order Traversal of Binary Tree](./problems/tree/level-order-traversal.md)
-6. [Right side view of Binary Tree](./problems/tree/binary-tree-right-side-view.md)
-7. [Good Nodes in Binary Tree](./problems/tree/count-good-nodes-in-binary-tree.md)
-8. [Valid Binary Search Tree](./problems/tree/valid-binary-search-tree.md)
+3. [Diameter Of Binary Tree](./problems/tree/diameter-of-binary-tree.md)
+4. [Balanced Binary Tree](./problems/tree/balanced-binary-tree.md)
+5. [Is Same Tree](./problems/tree/same-tree.md)
+6. [Lowest common ancestor in BST](./problems/tree/lowest-common-ancestor.md)
+7. [Level Order Traversal of Binary Tree](./problems/tree/level-order-traversal.md)
+8. [Right side view of Binary Tree](./problems/tree/binary-tree-right-side-view.md)
+9. [Good Nodes in Binary Tree](./problems/tree/count-good-nodes-in-binary-tree.md)
+10. [Valid Binary Search Tree](./problems/tree/valid-binary-search-tree.md)
        
 
 
