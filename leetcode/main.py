@@ -24,7 +24,7 @@ def get_examples(lines):
         example_details = [detail for detail in example_details if len(strip(detail)) > 0]
         example.append("```\n")
         example += example_details
-        example.append("```\n")
+        example.append("\n```\n")
 
     return example
 
@@ -61,9 +61,9 @@ if __name__ == '__main__':
     file_path = "temp.txt"
 
     # update these variables as per requirement
-    category= "tree"
-    package_name = "tree"
-    java_file="BalancedBinaryTree.java"
+    category= "heap"
+    package_name = "heap"
+    java_file="KthLargestInStream.java"
 
     with open(file_path) as file:
         lines = file.readlines()

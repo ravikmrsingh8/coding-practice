@@ -1,6 +1,6 @@
 # Leetcode
 [![Leetcode](./images/leetcode.png)](https://leetcode.com/problemset/)
-### 50 :white_check_mark: <code>Neetcode150</code>
+### 53 :white_check_mark: <code>Neetcode150</code>
 #### Arrays & Hashing
 1. [Contains Duplicate](./problems/hashing/contains-duplicate.md)
 2. [Valid Anagram](./problems/hashing/valid-anagram.md)
@@ -30,7 +30,8 @@
 
 
 #### Binary Search
-
+1. [Binary Search](./problems/binary-search/binary-search.md)
+2. [Search in a 2D Matrix](./problems/binary-search/search-a-2d-matrix.md)
                
 
 
@@ -61,10 +62,11 @@
 
 #### Heap / Priority Queue
 
-1. [Kth Largest Element in an Array](./problems/heap/kth-largest-element-in-array.md) 
-2. [Last Stone Weight](./problems/heap/last-stone-weight.md)                          
+1. [Kth Largest in a Stream](./problems/heap/kth-largest-element-in-a-stream.md)
+2. [Last Stone Weight](./problems/heap/last-stone-weight.md)
 3. [K Closest Points to Origin](./problems/heap/k-closest-points-to-origin.md)
-4. [Median Finder](./problems/heap/find-median-from-data-stream.md)
+4. [Kth Largest Element in an Array](./problems/heap/kth-largest-element-in-array.md)
+5. [Find median from the Data Stream](./problems/heap/find-median-from-data-stream.md)
 
 #### Backtracking
 
