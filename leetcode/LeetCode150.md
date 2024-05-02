@@ -1,6 +1,6 @@
 # Leetcode 150
 [![Leetcode](./images/leetcode.png)](https://leetcode.com/problemset/)
-### 53 :white_check_mark: <code>Neetcode150</code>
+### 55 :white_check_mark: <code>Neetcode150</code>
 #### Arrays & Hashing
 1. [Contains Duplicate](./problems/hashing/contains-duplicate.md)
 2. [Valid Anagram](./problems/hashing/valid-anagram.md)
@@ -15,7 +15,8 @@
  #### Two Pointers
 1. [Valid Palindrome](./problems/two-pointers/valid-palindrome.md)                        
 2. [Two Sum II Input Array Is Sorted](./problems/two-pointers/two-sum-ii-sorted-array.md) 
-3. [Container with most water](./problems/two-pointers/container-with-most-water.md)      
+3. [3Sum](./problems/two-pointers/3sum.md)
+4. [Container with most water](./problems/two-pointers/container-with-most-water.md)      
 
 
 #### Sliding Window

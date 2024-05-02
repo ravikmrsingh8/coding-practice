@@ -61,9 +61,9 @@ if __name__ == '__main__':
     file_path = "temp.txt"
 
     # update these variables as per requirement
-    category= "hashing"
-    package_name = "hashing"
-    java_file="ProductOfArray.java"
+    category= "two-pointers"
+    package_name = "twopointers"
+    java_file="ThreeSumToZero.java"
 
     with open(file_path) as file:
         lines = file.readlines()
