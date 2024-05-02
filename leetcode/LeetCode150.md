@@ -1,4 +1,4 @@
-# Leetcode
+# Leetcode 150
 [![Leetcode](./images/leetcode.png)](https://leetcode.com/problemset/)
 ### 53 :white_check_mark: <code>Neetcode150</code>
 #### Arrays & Hashing
@@ -7,9 +7,10 @@
 3. [Two Sum](./problems/hashing/two-sum.md)
 4. [Group Anagrams ](./problems/hashing/group-anagram.md)                             
 5. [Top K Frequent Elements](./problems/hashing/top-k-frequent-elements.md)           
-6. [Valid Sudoku](./problems/hashing/valid-sudoku.md)                                 
-7. [Longest Consecutive Sequence](./problems/hashing/longest-consecutive-sequence.md) 
-8. [Encode Decode Strings](./problems/hashing/encode-and-decode-strings.md) 
+6. [Valid Sudoku](./problems/hashing/valid-sudoku.md)   
+7. [Product of Array except itself](./problems/hashing/)
+8. [Longest Consecutive Sequence](./problems/hashing/longest-consecutive-sequence.md) 
+9. [Encode Decode Strings](./problems/hashing/encode-and-decode-strings.md) 
 
  #### Two Pointers
 1. [Valid Palindrome](./problems/two-pointers/valid-palindrome.md)                        

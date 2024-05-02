@@ -1,26 +1,25 @@
-Kth Largest Element in a Stream
-https://leetcode.com/problems/kth-largest-element-in-a-stream/description/
-Design a class to find the kth largest element in a stream. Note that it is the kth largest element in the sorted order, not the kth distinct element.
+Product of Array Except Self
+https://leetcode.com/problems/product-of-array-except-self/description/
+Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
 
-Implement KthLargest class:
+The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
 
-KthLargest(int k, int[] nums) Initializes the object with the integer k and the stream of integers nums.
-int add(int val) Appends the integer val to the stream and returns the element representing the kth largest element in the stream.
-----------------------
+You must write an algorithm that runs in O(n) time and without using the division operation.
+-----------------------------
+ 
 
 Example 1:
 
-Input
-["KthLargest", "add", "add", "add", "add", "add"]
-[[3, [4, 5, 8, 2]], [3], [5], [10], [9], [4]]
-Output
-[null, 4, 5, 5, 8, 8]
+Input: nums = [1,2,3,4]
+Output: [24,12,8,6]
+Example 2:
 
-Explanation
-KthLargest kthLargest = new KthLargest(3, [4, 5, 8, 2]);
-kthLargest.add(3);   // return 4
-kthLargest.add(5);   // return 5
-kthLargest.add(10);  // return 5
-kthLargest.add(9);   // return 8
-kthLargest.add(4);   // return 8
+Input: nums = [-1,1,0,-3,3]
+Output: [0,0,9,0,0]
  
+
+Constraints:
+
+2 <= nums.length <= 10^5
+-30 <= nums[i] <= 30
+The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.

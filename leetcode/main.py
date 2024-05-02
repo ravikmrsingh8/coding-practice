@@ -61,9 +61,9 @@ if __name__ == '__main__':
     file_path = "temp.txt"
 
     # update these variables as per requirement
-    category= "heap"
-    package_name = "heap"
-    java_file="KthLargestInStream.java"
+    category= "hashing"
+    package_name = "hashing"
+    java_file="ProductOfArray.java"
 
     with open(file_path) as file:
         lines = file.readlines()
