@@ -8,7 +8,7 @@
 4. [Group Anagrams ](./problems/hashing/group-anagram.md)                             
 5. [Top K Frequent Elements](./problems/hashing/top-k-frequent-elements.md)           
 6. [Valid Sudoku](./problems/hashing/valid-sudoku.md)   
-7. [Product of Array except itself](./problems/hashing/)
+7. [Product of Array except itself](./problems/hashing/product-of-array-except-self.md)
 8. [Longest Consecutive Sequence](./problems/hashing/longest-consecutive-sequence.md) 
 9. [Encode Decode Strings](./problems/hashing/encode-and-decode-strings.md) 
 
