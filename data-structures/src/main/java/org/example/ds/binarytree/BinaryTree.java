@@ -1,4 +1,4 @@
-package org.example.binarytree;
+package org.example.ds.binarytree;
 
 public class BinaryTree {
     public static class Node {

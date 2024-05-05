@@ -1,6 +1,6 @@
 # Leetcode 150
 [![Leetcode](./images/leetcode.png)](https://leetcode.com/problemset/)
-### 55 :white_check_mark: <code>Neetcode150</code>
+### 56 :white_check_mark: <code>Neetcode150</code>
 #### Arrays & Hashing
 1. [Contains Duplicate](./problems/hashing/contains-duplicate.md)
 2. [Valid Anagram](./problems/hashing/valid-anagram.md)
@@ -76,7 +76,7 @@
 
 
 #### Tries
-
+1. [Implement Trie](./problems/trie/implement-trie.md)
        
 
 
