@@ -1,7 +1,7 @@
 package org.example;
 
 
-public class App {
+public class ActiveMQDemo {
     public static void main( String[] args ) throws InterruptedException {
         Thread producer = new Thread(new HelloWorldProducer());
         producer.start();
@@ -12,7 +12,7 @@ public class App {
         producer.join();
         consumer.join();
 
-        Thread.sleep(10_000);
+        Thread.sleep(3_000);
 
     }
 }
