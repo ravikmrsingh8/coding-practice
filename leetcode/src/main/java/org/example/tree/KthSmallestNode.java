@@ -1,26 +1,34 @@
 package org.example.tree;
 
-public class KthSmallestNode {
-    int count = 0;
-    int ans = 0;
-    public int kthSmallest(TreeNode root, int k) {
-        inOrder(root, k);
-        return ans;
-    }
+import java.util.Stack;
 
-    void inOrder(TreeNode root, int k) {
-        if(root == null) return;
-        System.out.println("Traversing root.left "+ root.val);
-        inOrder(root.left, k);
-        System.out.println("Traversing root "+ root.val);
-        count += 1;
-        if(count == k) {
-            ans = root.val;
-            return;
+public class KthSmallestNode {
+
+    public int kthSmallest(TreeNode root, int k) {
+        Stack<TreeNode> stack = new Stack<TreeNode>();
+        TreeNode curr = root;
+        while(curr != null) {
+            stack.push(curr);
+            curr = curr.left;
         }
-        if (count < k) {
-            inOrder(root.right, k);
+
+        int count =0;
+        while(!stack.isEmpty()) {
+            TreeNode node = stack.pop();
+            count++;
+            if(count == k) {
+                return node.val;
+            }
+            if(node.right != null) {
+                curr = node.right;
+                while(curr != null) {
+                    stack.push(curr);
+                    curr = curr.left;
+                }
+            }
         }
+        //Shouldn't reach here ever
+        return -1;
     }
 
     public static void main(String[] args) {
